@@ -19,6 +19,7 @@ router.post('/register', async (req, res) => {
             name: req.body.name,
             email: req.body.email,
             password: newPassword,
+            twitter: req.body.twitter
         })
         res.json({ status: 'ok' })
     } catch (err) {
